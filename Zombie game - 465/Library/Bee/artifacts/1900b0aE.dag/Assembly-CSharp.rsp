@@ -357,6 +357,7 @@
 "Assets/door.cs"
 "Assets/Enemy.cs"
 "Assets/Player.cs"
+"Assets/Scenes/MainMenu.cs"
 -langversion:9.0
 
 /deterministic

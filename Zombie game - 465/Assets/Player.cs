@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ThirdPersonMovement : MonoBehaviour
 {
@@ -49,6 +50,14 @@ public class ThirdPersonMovement : MonoBehaviour
         {
             
             rb.velocity = projectileSpawnPoint.forward * projectileSpeed;
+        }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(collision.gameObject);
+            SceneManager.LoadScene("Main menu");
         }
     }
 }

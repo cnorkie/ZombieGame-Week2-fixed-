@@ -148,3 +148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ab95fab0d7a144caf5a7754a30a480, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  chaseSpeed: 3.5
+  health: 1
